@@ -4,7 +4,7 @@ $(document).ready(readyNow);
 
 function readyNow() {
   $('#generateBtn').on('click', generateBtnClicked);
-  $('.generateBtn').on('click', '.swap', swapBtnClicked);
+  $('.main').on('click', '.swap', swapBtnClicked);
   $('.main').on('click', '.delete', removeBtnClicked);
 }
 
@@ -22,7 +22,6 @@ function generateBtnClicked() {
   //var $div = $('.main').append('<div><p>' + clickCounter + '</p></div>');
   $div.append('<button class="swap">Swap</button><button class="delete">Delete</button>');
 
-  $(".color").css("background", "red");
 }
 
 function swapBtnClicked() {
